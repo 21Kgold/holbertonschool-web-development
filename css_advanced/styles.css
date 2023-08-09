@@ -1,0 +1,439 @@
+:root {
+  --primary1: hsla(214, 71%, 9%, 1.0);
+  --primary2: hsla(214, 71%, 9%, 0.5);
+  --accent1: hsla(0, 0%, 100%, 1.0);
+  --accent2: hsla(274, 100%, 72%, 1.0);
+  --accent3: hsla(0, 0%, 95%, 1.0);
+}
+
+html {
+  text-align: center;
+}
+
+body {
+  width: 1440px;
+  height: 3718px;
+  background-color:var(--accent3);
+  color: var(--accent1);
+  font-family: "Source Sans Pro"; /* REVISAR */
+  margin: 0 auto;
+  background-image: url('./Images/background.png');
+  background-size: 1440px 1093px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+/* BANNER */
+.banner__nav {
+  width: 1103px;
+  height: 29px;
+  margin: 0 auto;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.banner__nav--logo img {
+  width: 167px;
+  height: 29px;
+}
+
+.banner__nav--menu {
+  font-size: 12;
+  font-weight: bold;
+  margin: auto 0;
+  width: 234px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__nav--menu a:link, .banner__nav--menu a:visited {
+  color: var(--accent1);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.banner__calls h1 {
+  font-size: 120px;
+  margin: 156px auto 0 auto;
+  font-weight: bold; /* REVISAR */
+}
+
+.banner__calls p {
+  font-size: 16px;
+  font-weight: bold; /* REVISAR */
+  word-spacing: 59px;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+.banner__calls button {
+  color: var(--accent1);
+  background-color: var(--accent2);
+  border: none;
+  font-family: "Source Sans Pro";
+  width: 162px;
+  height: 44px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: 14px;
+  font-weight: 500; /* REVISAR */
+  margin-top: 38px;
+  margin-bottom: 0;
+}
+
+.banner__pros h2 {
+  font-size: 32px;
+  font-weight: lighter;
+  margin-top: 168px;
+  margin-bottom: 0;
+}
+
+.banner__pros h2::before {
+  content: "Learn ";
+  color: var(--accent2);
+  font-weight: bold;
+}
+
+.banner__pros--container {
+  width: 1009px;
+  height: 237px;
+  margin: auto;
+  margin-top: 87px;
+  margin-bottom: 98px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.banner__pros img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.banner__pros h3 {
+  font-size: 18px;
+  font-weight: bolder;  /* REVISAR */
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.banner__pros p {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* QUOTES */
+.quotes {
+  height: 392px;
+  font-size: 22px;
+  background-color: var(--accent2);
+  display: flex;
+  align-items: center;
+}
+
+.quotes__container {
+  width: 943px;
+  height: 160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quotes__container img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.quotes__quote {
+  width: 730px;
+  height: 158px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: left;
+}
+
+.quotes__quote blockquote {
+  padding: 0;
+  margin: 0;
+  line-height: 34px;
+}
+
+.quotes__quote--author {
+  padding: 26px 0px 0px 0px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.quotes__quote--position {
+  padding: 4px 0px 0px 0px;
+  margin: 0;
+  font-style: italic;
+}
+
+/* VIDEOS */
+
+
+.videos {
+  width: 1440px;
+  height: 624px;
+  background-color: var(--accent1);
+}
+
+.videos h1 {
+  font-size: 32px;
+  font-weight: lighter;
+  color: var(--primary1);
+  margin: auto 0;
+  padding-top: 87px;
+}
+
+.highlight {
+  color: var(--accent2);
+  font-weight: bold;
+}
+
+.videos__container {
+  width: 1111px;
+  height: 335px;
+  text-align: left;
+  margin: 75px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.videos__tutorial--1 {
+  width: 255px;
+  background-image: url("./Images/tutor1.png");
+  background-repeat: no-repeat;
+  background-size: 255px 154px;
+}
+
+.videos__tutorial--2 {
+  width: 255px;
+  background-image: url("./Images/tutor2.png");
+  background-repeat: no-repeat;
+  background-size: 255px 154px;
+}
+
+.videos__tutorial--3 {
+  width: 255px;
+  background-image: url("./Images/tutor3.png");
+  background-repeat: no-repeat;
+  background-size: 255px 154px;
+}
+
+.videos__tutorial--4 {
+  width: 255px;
+  background-image: url("./Images/tutor4.png");
+  background-repeat: no-repeat;
+  background-size: 255px 154px;
+}
+
+img[alt="TUTORIAL"] {
+  display: block;
+  margin: 45px auto 0 auto;
+}
+
+.videos__container h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary1);
+  margin: 63px 0 0 13px;
+}
+
+.videos__container p {
+  font-size: 14px;
+  color: var(--primary2);
+  margin: 20px 0 0 13px;
+}
+
+.videos__tutor h3 {
+  margin: auto 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent2);
+}
+
+.videos__tutor {
+  width: 129px;
+  height: 30px;
+  margin: 13px 0 0 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video__review {
+  width: 220px;
+  height: 27px;
+  margin: 11px 0 0 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video__stars {
+  width: 107px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video__review p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent2);
+  margin: -4px 0 0 0;
+}
+
+/* MEMBER */
+.member {
+  width: 1440px;
+  height: 502px;
+  background-color: var(--primary1);
+  display:list-item;
+}
+
+.member__container {
+  width: 1112px;
+  height: 153px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.member__smile {
+  width: 257px;
+  height: 153px;
+}
+
+.member h1 {
+  font-size: 32px;
+  font-weight: lighter;
+  padding-top: 70px;
+  padding-bottom: 58px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.member h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+
+.member__smile p {
+  font-size: 14px;
+  width: 212px;
+  margin: 4px auto;
+  line-height: 22px;
+}
+
+.member button {
+  color: var(--accent1);
+  background-color: var(--accent2);
+  border: none;
+  font-family: "Source Sans Pro";
+  width: 162px;
+  height: 44px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500; /* REVISAR */
+  margin-top: 85px;
+  margin-bottom: 0;
+}
+
+/* FAQ */
+
+.faq {
+  height: 858px;
+  background-color: var(--accent1);
+}
+
+.faq h1 {
+  font-size: 60px;
+  color: var(--primary1);
+  font-weight: lighter;
+  padding-top: 67px;
+  margin-top: 0;
+  margin-bottom: 74px;
+}
+
+.faq__column {
+  width: 920px;
+  height: 558px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq__box {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__box div {
+  width: 350px;
+  height: 242px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__box div:first-child {
+  margin-bottom: 74px;
+}
+
+.faq h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary1);
+  margin: 0 0 30px 0;
+}
+
+.faq p {
+  font-size: 14px;
+  color: var(--primary2);
+  line-height: 24px;
+  margin-top: 0;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--primary1);
+  height: 249px;
+}
+
+.footer__links {
+  width: 1035px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 95px;
+  padding-bottom: 70px;
+  margin: 0 auto 0 auto;
+}
+
+.footer__social {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0;
+}
+
+.footer p {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+img[alt="LOGO"] {
+  width: 169px;
+  height: 30px;
+}
